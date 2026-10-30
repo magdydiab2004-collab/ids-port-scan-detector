@@ -16,7 +16,9 @@ Key details:
 - Ports are stored in a **set**, so 100 SYNs to port 443 count as one port.
 - The threshold is adjustable with `--scan-port-threshold`.
 
-## Structure
+## Project structure
+
+```
 .
 ├── pcap_analyzer.py        # The detector
 ├── tests/
@@ -28,6 +30,8 @@ Key details:
 │   └── IDS_Project_Report.pdf
 ├── requirements.txt
 └── .gitignore
+```
+
 
 ## Setup
 
@@ -118,3 +122,5 @@ python3 pcap_analyzer.py captures/real_scan.pcap
 ## Responsible use
 
 Capture and scan only networks and systems you own or have explicit permission to test. Don't commit real packet captures to the repository, as they can contain private traffic (`.gitignore` excludes them).
+
+
