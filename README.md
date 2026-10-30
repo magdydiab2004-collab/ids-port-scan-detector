@@ -16,21 +16,7 @@ Key details:
 - Ports are stored in a **set**, so 100 SYNs to port 443 count as one port.
 - The threshold is adjustable with `--scan-port-threshold`.
 
-## Project structure
 
-```
-.
-├── pcap_analyzer.py        # The detector
-├── tests/
-│   └── make_test_pcap.py   # Builds a labeled test capture with Scapy
-├── scripts/
-│   ├── capture.sh          # Capture live traffic with tcpdump
-│   └── run_demo.sh         # Build test pcap + run detector at two thresholds
-├── docs/
-│   └── IDS_Project_Report.pdf
-├── requirements.txt
-└── .gitignore
-```
 
 ## Setup
 
